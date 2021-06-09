@@ -1,0 +1,128 @@
+.window-group {
+    justify-content: center;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+}
+
+.window-group p {
+    cursor: default;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.window {
+    position: absolute;
+    background-color: transparent;
+    transition: opacity .15s, visibility .15s, height .05s, width .05s;
+}
+
+.window-inner {
+    position: absolute;
+    background-color: rgba(246, 246, 246, 0.9);
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px -2px black;
+    opacity: 1;
+    z-index: 100;
+}
+
+.window-border {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+}
+
+.window-border div {
+    display: flex;
+}
+
+.window-border .small {
+    height: 10px;
+}
+
+.window-border .tall {
+    height: 100%;
+}
+
+.window-border div .wide {
+    width: 100%;
+}
+
+.window-border div .thin {
+    width: 10px;
+}
+
+.window-border div div {
+    height: 100%;
+}
+
+.cursor-ew:hover {
+    cursor: ew-resize;
+}
+
+.cursor-ns:hover {
+    cursor: ns-resize;
+}
+
+.cursor-nesw:hover {
+    cursor: nesw-resize;
+}
+
+.cursor-nwse:hover {
+    cursor: nwse-resize;
+}
+
+.window-border.hidden {
+    display: none;
+}
+
+.window.hidden {
+    height: 40px !important;
+}
+
+.window.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.window-header {
+    padding: 10px;
+    z-index: 10;
+    background-color: black;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    touch-action: none;
+}
+
+.window-header div img {
+    margin: 0 0 0 8px;
+}
+
+.window-header div:hover {
+    cursor: pointer;
+}
+
+.window-title {
+    position: relative;
+    bottom: 2px;
+}
+
+.window-content {
+    opacity: 1;
+    transition: all .1s ease-in-out;
+}
+
+.window-content div {
+    padding: 20px;
+}
+
+.window-content.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,67 @@
+@import url("window.css");
+@import url("themes.css");
+@import url("menubar.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/images/background.jpg");
+    margin: 0;
+    /*background-color: #5d5d5d;*/
+}
+
+.rotatable {
+    transition: transform .3s;
+}
+
+.rotatable:hover {
+    cursor: pointer;
+}
+
+.rotate div .rotatable {
+    transform: rotateX(180deg);
+}
+
+.top-panel {
+    width: 35%;
+    height: 56px;
+    border-radius: 0 0 40px 40px;
+    transform: translate(0px, -1px);
+    transition: height .3s cubic-bezier(0.65, 0.02, 0.25, 1);
+}
+
+.top-panel hr {
+    border: 1px solid rgba(52, 52, 62, 0.9);
+    margin: auto;
+}
+
+.top-panel.hidden {
+    height: 0;
+}
+
+.top-panel div {
+    border-radius: 0 0 50px 50px;
+    bottom: -30px;
+    width: 65px;
+    height: 31px;
+}
+
+.center-horizontal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-vertical {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}

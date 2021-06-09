@@ -1,0 +1,47 @@
+.cyan {
+    background-color: darkcyan;
+}
+
+.red {
+    background-color: indianred;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.indigo {
+    background-color: indigo;
+}
+
+.gray {
+    background-color: rgb(65, 63, 60);
+}
+
+.light {
+    background-color: rgba(246, 246, 246, 0.9);
+}
+
+.lighter-dark {
+    background-color: rgba(72, 76, 94, 0.9);
+}
+
+.light-dark {
+    background-color: rgba(52, 52, 62, 0.9);
+}
+
+.medium-dark {
+    background-color: rgba(43, 44, 52, 0.9);
+}
+
+.dark {
+    background-color: rgba(30, 30, 36, 0.9);
+}
+
+.darker {
+    background-color: rgba(28, 28, 33, 0.9);
+}
+
+.text-light {
+    color: #d7d7d7;
+}
