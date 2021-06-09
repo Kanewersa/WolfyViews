@@ -3,3 +3,5 @@ Desktop-like UI created in JS, HTML and CSS to be used as an interface for in-ga
 
 # How to use
 Simply download the project and open main.html in any browser that supports ES6.
+
+![Image](https://i.imgur.com/00kr21c.png)
